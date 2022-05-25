@@ -24,11 +24,9 @@ class SchoolNetworking: ObservableObject {
                     if let safeData = data {
                         do {
                             let results = try decoder.decode( [SchoolData].self, from: safeData)
-                            DispatchQueue.main.async { [self] in
+                            DispatchQueue.main.async {
                                 self.schoolData = results
-                                if ((filteredSchools?.isEmpty) != nil) {
-                                    filteredSchools = schoolData
-                                }
+                                
                             }
                         } catch {
                             print(error)

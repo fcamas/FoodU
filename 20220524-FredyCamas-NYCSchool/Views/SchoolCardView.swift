@@ -33,8 +33,8 @@ struct SchoolCardView: View {
                                 schoolNetworking.search(searchText: search)
                             }label: {
                                 Image(systemName: "magnifyingglass")
-                            }
-                        }
+                            }.padding()
+                        }.padding()
                     }
                     .padding(.horizontal)
                     ScrollView{
