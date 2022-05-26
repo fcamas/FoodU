@@ -11,8 +11,8 @@ import MapKit
 struct ExtendedSchoolCardView: View {
     
     let cardID: String?
-    let cardContent: SchoolData?
-    @ObservedObject var satNetworking = SatNetworking()
+    let cardContent: SchoolCard?
+    @ObservedObject var schoolManager = SchoolManager()
     
     @State var coordinateRegion: MKCoordinateRegion = {
         var newRegion = MKCoordinateRegion()
@@ -42,7 +42,7 @@ struct ExtendedSchoolCardView: View {
                 
                 
                 VStack(alignment: .leading) {
-                    Text(cardContent?.location! ?? "")
+                    Text(cardContent?.location ?? "")
                     Group{
                         
                         Text(cardContent?.school_email ?? "")
@@ -55,16 +55,16 @@ struct ExtendedSchoolCardView: View {
                     Group{
                         HStack{
                             Text("Sat reading score:")
-                            Text(satNetworking.satCard?.sat_critical_reading_avg_score ?? "")
+                            Text(schoolManager.satCard?.sat_critical_reading_avg_score ?? "")
                         }
                         
                         HStack{
                             Text("Sat writing score:")
-                            Text(satNetworking.satCard?.sat_writing_avg_score ?? "")
+                            Text(schoolManager.satCard?.sat_writing_avg_score ?? "")
                         }
                         HStack{
                             Text("Sat math score:")
-                            Text(satNetworking.satCard?.sat_math_avg_score ?? "")
+                            Text(schoolManager.satCard?.sat_math_avg_score ?? "")
                         }
                         
                     }.font(.subheadline)
@@ -72,15 +72,15 @@ struct ExtendedSchoolCardView: View {
                     
                     Divider()
                     
-                    Text(cardContent?.borough! ?? "")
+                    Text(cardContent?.borough ?? "")
                         .font(.title2)
-                    Text(cardContent?.overview_paragraph! ?? "")
+                    Text(cardContent?.overview_paragraph ?? "")
                 }
                 .padding()
                 
                 Spacer()
             }.onAppear(){
-                satNetworking.fetchData(cardID)
+                schoolManager.fetchSatData(newCard: cardID)
                 
                 let coordinateRegionn: MKCoordinateRegion = {
                     var newRegion = MKCoordinateRegion()
@@ -105,7 +105,7 @@ struct ExtendedSchoolCardView: View {
 
 struct ContentViewB_Previews: PreviewProvider {
     static var previews: some View {
-        let schoolData = SchoolData()
+        let schoolData = SchoolCard()
         ExtendedSchoolCardView(cardID: "No Data", cardContent: schoolData)
     }
 }

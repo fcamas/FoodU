@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SchoolCardView: View {
-    @ObservedObject var schoolNetworking = SchoolNetworking()
+    @ObservedObject var schoolManager = SchoolManager()
     @State var search:String = ""
     
     var body: some View {
@@ -30,7 +30,7 @@ struct SchoolCardView: View {
                             TextField("Search", text: $search)
                             
                             Button{
-                                schoolNetworking.search(searchText: search)
+                                schoolManager.search(searchText: search)
                             }label: {
                                 Image(systemName: "magnifyingglass")
                             }.padding()
@@ -41,10 +41,10 @@ struct SchoolCardView: View {
                         
                         LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]){
                             
-                            ForEach(schoolNetworking.filteredSchools!){ name in
+                            ForEach(schoolManager.filterSchoolCards!){ name in
                                 
                                 NavigationLink(destination: ExtendedSchoolCardView(cardID: name.id, cardContent: name)) {
-                                    CardView(schoolName: name.school_name!,schoolBorough: name.borough!)
+                                    CardView(schoolName: name.school_name ?? "Fail at loading",schoolBorough: name.borough ?? "Fail at loading")
                                         .aspectRatio(2/3, contentMode: .fill)
                                 }
                                 
@@ -55,7 +55,7 @@ struct SchoolCardView: View {
                     .navigationBarHidden(true)
                 
             }.onAppear {
-                self.schoolNetworking.fetchData()
+                self.schoolManager.fetchSchoolData()
                 
             }
         }

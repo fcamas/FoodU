@@ -15,9 +15,9 @@
 		1C1F12A9283D698800DB6589 /* _0220524_FredyCamas_NYCSchoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1F12A8283D698800DB6589 /* _0220524_FredyCamas_NYCSchoolUITests.swift */; };
 		1C1F12AB283D698800DB6589 /* _0220524_FredyCamas_NYCSchoolUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1F12AA283D698800DB6589 /* _0220524_FredyCamas_NYCSchoolUITestsLaunchTests.swift */; };
 		1C1F12BB283D6A4A00DB6589 /* ExtendedSchoolCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1F12BA283D6A4A00DB6589 /* ExtendedSchoolCardView.swift */; };
-		1C1F12BD283D6A5C00DB6589 /* SchoolNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1F12BC283D6A5C00DB6589 /* SchoolNetworking.swift */; };
-		1C1F12BF283D6A6C00DB6589 /* SatNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1F12BE283D6A6C00DB6589 /* SatNetworking.swift */; };
-		1C1F12C1283D6A8100DB6589 /* SchoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1F12C0283D6A8100DB6589 /* SchoolModel.swift */; };
+		1C1F12C1283D6A8100DB6589 /* SchoolCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1F12C0283D6A8100DB6589 /* SchoolCard.swift */; };
+		1C1F12FE283EFDFF00DB6589 /* SchoolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1F12FD283EFDFF00DB6589 /* SchoolManager.swift */; };
+		1C1F1300283EFE9E00DB6589 /* URLSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1F12FF283EFE9E00DB6589 /* URLSessionExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +49,9 @@
 		1C1F12A8283D698800DB6589 /* _0220524_FredyCamas_NYCSchoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0220524_FredyCamas_NYCSchoolUITests.swift; sourceTree = "<group>"; };
 		1C1F12AA283D698800DB6589 /* _0220524_FredyCamas_NYCSchoolUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0220524_FredyCamas_NYCSchoolUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1C1F12BA283D6A4A00DB6589 /* ExtendedSchoolCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedSchoolCardView.swift; sourceTree = "<group>"; };
-		1C1F12BC283D6A5C00DB6589 /* SchoolNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolNetworking.swift; sourceTree = "<group>"; };
-		1C1F12BE283D6A6C00DB6589 /* SatNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatNetworking.swift; sourceTree = "<group>"; };
-		1C1F12C0283D6A8100DB6589 /* SchoolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolModel.swift; sourceTree = "<group>"; };
+		1C1F12C0283D6A8100DB6589 /* SchoolCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolCard.swift; sourceTree = "<group>"; };
+		1C1F12FD283EFDFF00DB6589 /* SchoolManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolManager.swift; sourceTree = "<group>"; };
+		1C1F12FF283EFE9E00DB6589 /* URLSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +149,7 @@
 		1C1F12B8283D6A2B00DB6589 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1C1F12C0283D6A8100DB6589 /* SchoolModel.swift */,
+				1C1F12C0283D6A8100DB6589 /* SchoolCard.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -157,8 +157,8 @@
 		1C1F12B9283D6A3500DB6589 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				1C1F12BE283D6A6C00DB6589 /* SatNetworking.swift */,
-				1C1F12BC283D6A5C00DB6589 /* SchoolNetworking.swift */,
+				1C1F12FD283EFDFF00DB6589 /* SchoolManager.swift */,
+				1C1F12FF283EFE9E00DB6589 /* URLSessionExtension.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -294,11 +294,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C1F12BB283D6A4A00DB6589 /* ExtendedSchoolCardView.swift in Sources */,
-				1C1F12C1283D6A8100DB6589 /* SchoolModel.swift in Sources */,
-				1C1F12BD283D6A5C00DB6589 /* SchoolNetworking.swift in Sources */,
+				1C1F12C1283D6A8100DB6589 /* SchoolCard.swift in Sources */,
+				1C1F1300283EFE9E00DB6589 /* URLSessionExtension.swift in Sources */,
 				1C1F1290283D698600DB6589 /* SchoolCardView.swift in Sources */,
-				1C1F12BF283D6A6C00DB6589 /* SatNetworking.swift in Sources */,
 				1C1F128E283D698600DB6589 /* _0220524_FredyCamas_NYCSchoolApp.swift in Sources */,
+				1C1F12FE283EFDFF00DB6589 /* SchoolManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

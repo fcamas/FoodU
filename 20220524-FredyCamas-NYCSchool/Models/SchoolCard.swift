@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SchoolData: Decodable,Identifiable {
+struct SchoolCard: Decodable,Identifiable {
     var id:String? {
         return dbn
     }
@@ -25,17 +25,17 @@ struct SchoolData: Decodable,Identifiable {
     var bin:String?
     
     var longitudeDouble: Double? {
-        return Double(longitude!)
+        return Double(longitude ?? "00")
     }
     var latitudeDouble: Double? {
-        return Double(latitude!)
+        return Double(latitude ?? "00")
     }
     
     
     
 }
 
-struct SatData: Decodable,Identifiable {
+struct SatCard: Decodable,Identifiable {
     var id:String? {
         return dbn
     }
