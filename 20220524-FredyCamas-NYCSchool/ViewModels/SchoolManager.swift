@@ -2,7 +2,7 @@
 //  SchoolViewModel.swift
 //  20220524-FredyCamas-NYCSchool
 //
-//  Created by Life on 5/25/22.
+//  Created by Fredy Camas on 5/25/22.
 //
 
 import Foundation
@@ -35,6 +35,9 @@ class SchoolManager: ObservableObject {
                 DispatchQueue.main.async {
                     print(results)
                     self.schoolCards = results
+                    if self.filterSchoolCards!.count < 1 {
+                        self.filterSchoolCards = results
+                    }
                     
                 }
             case .failure(let error):
