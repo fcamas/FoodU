@@ -14,6 +14,7 @@
 		118186732AEAAF0500ADCF53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 118186722AEAAF0500ADCF53 /* Assets.xcassets */; };
 		118186762AEAAF0500ADCF53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118186742AEAAF0500ADCF53 /* LaunchScreen.storyboard */; };
 		1181867E2AEB0CF400ADCF53 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181867D2AEB0CF400ADCF53 /* SplashScreen.swift */; };
+		118186812AEB0EBE00ADCF53 /* BussinessCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118186802AEB0EBE00ADCF53 /* BussinessCardModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		118186752AEAAF0500ADCF53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		118186772AEAAF0500ADCF53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1181867D2AEB0CF400ADCF53 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SplashScreen.swift; path = ../../SplashScreen.swift; sourceTree = "<group>"; };
+		118186802AEB0EBE00ADCF53 /* BussinessCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BussinessCardModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		118186682AEAAF0500ADCF53 /* FoodU */ = {
 			isa = PBXGroup;
 			children = (
+				1181867F2AEB0EA100ADCF53 /* Model */,
 				1181867D2AEB0CF400ADCF53 /* SplashScreen.swift */,
 				118186692AEAAF0500ADCF53 /* AppDelegate.swift */,
 				1181866B2AEAAF0500ADCF53 /* SceneDelegate.swift */,
@@ -68,6 +71,14 @@
 				118186772AEAAF0500ADCF53 /* Info.plist */,
 			);
 			path = FoodU;
+			sourceTree = "<group>";
+		};
+		1181867F2AEB0EA100ADCF53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				118186802AEB0EBE00ADCF53 /* BussinessCardModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +156,7 @@
 				1181866E2AEAAF0500ADCF53 /* ViewController.swift in Sources */,
 				1181866A2AEAAF0500ADCF53 /* AppDelegate.swift in Sources */,
 				1181866C2AEAAF0500ADCF53 /* SceneDelegate.swift in Sources */,
+				118186812AEB0EBE00ADCF53 /* BussinessCardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
