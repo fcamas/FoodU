@@ -19,5 +19,7 @@ struct BusinessCardModel{
     var longitude:Double
     var latitude:Double
     
-   
+    var addessString: String {
+         address.joined(separator: "\n")
+    }
 }
