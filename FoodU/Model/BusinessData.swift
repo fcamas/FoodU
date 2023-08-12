@@ -19,7 +19,12 @@ struct BusinessData: Codable{
         var is_closed : Bool?
         var distance : Double?
         var image_url: String?
-       
+        var location: Location?
+        
+    }
+
+    struct Location: Codable{
+        var display_address: [String]?
     }
     
 }
