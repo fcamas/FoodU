@@ -20,11 +20,16 @@ struct BusinessData: Codable{
         var distance : Double?
         var image_url: String?
         var location: Location?
-        
+        var coordinates:Coordinates?
     }
 
+    struct Coordinates: Codable{
+        var latitude: Double?
+        var longitude:Double?
+    }
     struct Location: Codable{
         var display_address: [String]?
     }
+
     
 }
