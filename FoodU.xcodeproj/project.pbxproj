@@ -16,6 +16,7 @@
 		1181867E2AEB0CF400ADCF53 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181867D2AEB0CF400ADCF53 /* SplashScreen.swift */; };
 		118186812AEB0EBE00ADCF53 /* BussinessCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118186802AEB0EBE00ADCF53 /* BussinessCardModel.swift */; };
 		118186832AEB0F7500ADCF53 /* BusinessData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118186822AEB0F7500ADCF53 /* BusinessData.swift */; };
+		118186862AEB10C400ADCF53 /* BusinessManagment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118186852AEB10C400ADCF53 /* BusinessManagment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1181867D2AEB0CF400ADCF53 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SplashScreen.swift; path = ../../SplashScreen.swift; sourceTree = "<group>"; };
 		118186802AEB0EBE00ADCF53 /* BussinessCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BussinessCardModel.swift; sourceTree = "<group>"; };
 		118186822AEB0F7500ADCF53 /* BusinessData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessData.swift; sourceTree = "<group>"; };
+		118186852AEB10C400ADCF53 /* BusinessManagment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessManagment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		118186682AEAAF0500ADCF53 /* FoodU */ = {
 			isa = PBXGroup;
 			children = (
+				118186842AEB10AB00ADCF53 /* Networking */,
 				1181867F2AEB0EA100ADCF53 /* Model */,
 				1181867D2AEB0CF400ADCF53 /* SplashScreen.swift */,
 				118186692AEAAF0500ADCF53 /* AppDelegate.swift */,
@@ -82,6 +85,14 @@
 				118186822AEB0F7500ADCF53 /* BusinessData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		118186842AEB10AB00ADCF53 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				118186852AEB10C400ADCF53 /* BusinessManagment.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +170,7 @@
 				1181866E2AEAAF0500ADCF53 /* ViewController.swift in Sources */,
 				1181866A2AEAAF0500ADCF53 /* AppDelegate.swift in Sources */,
 				1181866C2AEAAF0500ADCF53 /* SceneDelegate.swift in Sources */,
+				118186862AEB10C400ADCF53 /* BusinessManagment.swift in Sources */,
 				118186812AEB0EBE00ADCF53 /* BussinessCardModel.swift in Sources */,
 				118186832AEB0F7500ADCF53 /* BusinessData.swift in Sources */,
 			);
