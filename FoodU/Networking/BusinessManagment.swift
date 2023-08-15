@@ -11,3 +11,10 @@ import CoreLocation
 protocol BusinessManagmentDelegate{
     func didUpdateBusiness(businessData: [BusinessCardModel])
 }
+
+struct BusinessManagment {
+    
+    let baseURL = "https://api.yelp.com/v3/businesses/search"
+    let apikey = "API KEY HERE"
+    var delegate:BusinessManagmentDelegate?
+}
