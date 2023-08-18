@@ -48,10 +48,32 @@ struct BusinessManagment {
                 
                let dataString = String(data: newData, encoding: .utf8)
                 print(dataString)
-               
+                if let businessCard =  self.parseJSON(businessData: newData){
+                    delegate?.didUpdateBusiness(businessData: businessCard)
+                }
             }
            
         }
         task.resume()
     }
+    
+    func parseJSON(businessData: Data) -> [BusinessCardModel]?{
+        let decoder = JSONDecoder()
+        var businessContainer: [BusinessCardModel] = []
+        
+        do{
+            let decoderData = try decoder.decode(BusinessData.self, from: businessData)
+           
+            print(decoderData)
+           
+            return businessContainer
+            
+            
+        }catch {
+            print(error)
+            return nil
+          
+        }
+    }
+
 }
