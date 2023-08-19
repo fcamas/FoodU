@@ -65,6 +65,24 @@ struct BusinessManagment {
             let decoderData = try decoder.decode(BusinessData.self, from: businessData)
            
             print(decoderData)
+            for business in decoderData.businesses{
+                
+                print(business)
+                let id = business.id ?? "\(UUID())"
+                let name = business.name ?? "Coming Soon"
+                let rating = business.rating ?? 0.0
+                let price = business.price ?? "unkown"
+                let open = business.is_closed  ?? true
+                let address = business.location?.display_address ?? []
+                let url = business.image_url ?? ""
+             
+                let longitude = business.coordinates?.longitude ?? 0.0
+                let latitude = business.coordinates?.latitude ?? 0.0
+
+                let customCard = BusinessCardModel(id: id, name: name, rating: rating, favorite: false, price: price, open: open, address: address, urlImage: url,longitude: longitude, latitude: latitude)
+
+                businessContainer.append(customCard)
+            }
            
             return businessContainer
             
