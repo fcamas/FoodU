@@ -14,4 +14,13 @@ protocol SearchResultCellDelegate: AnyObject {
 class SearchResultCell: UICollectionViewCell {
     static let id = "ResultEventCell"
     weak var delegate: SearchResultCellDelegate?
+    
+    
+    let imageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
 }
