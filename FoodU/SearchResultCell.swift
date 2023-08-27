@@ -65,7 +65,10 @@ class SearchResultCell: UICollectionViewCell {
             imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             imageView.heightAnchor.constraint(equalToConstant: 150),
-           
+            
+            nameLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 8),
+            nameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),
+            nameLabel.trailingAnchor.constraint(equalTo: heartButton.leadingAnchor, constant: -8),
         ])
     }
 }
