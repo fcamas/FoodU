@@ -73,6 +73,9 @@ class SearchResultCell: UICollectionViewCell {
             priceLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 8),
             priceLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),
             priceLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8),
+            
+            rateLabel.topAnchor.constraint(equalTo: priceLabel.bottomAnchor, constant: 8),
+            rateLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),
         ])
     }
 }
