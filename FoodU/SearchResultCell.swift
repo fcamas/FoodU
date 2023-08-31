@@ -83,4 +83,9 @@ class SearchResultCell: UICollectionViewCell {
             heartButton.heightAnchor.constraint(equalToConstant: 30)
         ])
     }
+    
+    @objc private func heartButtonTapped() {
+        
+        delegate?.togglHeartBtn(for: self)
+    }
 }
