@@ -16,6 +16,12 @@ class SearchResultCell: UICollectionViewCell {
     weak var delegate: SearchResultCellDelegate?
     
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        loadConstraints()
+        heartButton.addTarget(self, action: #selector(heartButtonTapped), for: .touchUpInside)
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
