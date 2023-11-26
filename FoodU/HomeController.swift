@@ -18,3 +18,13 @@ class HomeController: UICollectionViewController {
         super.viewDidLoad()
     }
 }
+
+extension HomeController: SearchResultCellDelegate {
+    func togglHeartBtn(for cell: SearchResultCell) {
+        guard let indexPath = collectionView.indexPath(for: cell) else { return }
+        cardContainerOnDisplay[indexPath.row].favorite =
+        !cardContainerOnDisplay[indexPath.row].favorite
+        
+        collectionView.reloadItems(at: [indexPath])
+    }
+}

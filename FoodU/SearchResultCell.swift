@@ -7,23 +7,19 @@
 
 import UIKit
 
-protocol SearchResultCellDelegate: AnyObject {
-    func togglHeartBtn(for cell: SearchResultCell)
-}
-
 class SearchResultCell: UICollectionViewCell {
+    
     static let id = "ResultEventCell"
     weak var delegate: SearchResultCellDelegate?
     
+    // MARK: - Properties
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        loadConstraints()
-        heartButton.addTarget(self, action: #selector(heartButtonTapped), for: .touchUpInside)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    var isHeartButtonSelected: Bool = false {
+        didSet {
+            let image = isHeartButtonSelected ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart")
+            heartButton.setImage(image, for: .normal)
+            heartButton.tintColor = isHeartButtonSelected ? .red : .gray
+        }
     }
     
     let imageView: UIImageView = {
@@ -33,12 +29,14 @@ class SearchResultCell: UICollectionViewCell {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
+    
     let nameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
     let priceLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16)
@@ -46,6 +44,7 @@ class SearchResultCell: UICollectionViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
     let rateLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16)
@@ -61,6 +60,18 @@ class SearchResultCell: UICollectionViewCell {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
+    
+    // MARK: - Initializers
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        loadConstraints()
+        heartButton.addTarget(self, action: #selector(heartButtonTapped), for: .touchUpInside)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     private func loadConstraints() {
         
@@ -94,8 +105,14 @@ class SearchResultCell: UICollectionViewCell {
         ])
     }
     
+    // MARK: - Actions
+    
     @objc private func heartButtonTapped() {
         
         delegate?.togglHeartBtn(for: self)
     }
+}
+
+protocol SearchResultCellDelegate: AnyObject {
+    func togglHeartBtn(for cell: SearchResultCell)
 }
