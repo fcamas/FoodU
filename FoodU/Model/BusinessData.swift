@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct BusinessData: Codable{
+struct Businesses: Codable{
     
     var businesses:[Businesses]
    
