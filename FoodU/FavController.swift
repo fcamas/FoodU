@@ -20,6 +20,15 @@ class FavController: UICollectionViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tabBarItem.badgeValue = "2"
+        NotificationCenter.default.addObserver(self, selector: #selector(didReceiveFavoritesUpdate), name: Notification.Name("BadgeValue"), object: nil)
+        
+    }
+    // Handle the notification
+    @objc private func didReceiveFavoritesUpdate() {
+        updateBadgeValue()
+    }
+    func updateBadgeValue() {
+        let cardIDArray = [2,3,4] // add badget db values here 
+        tabBarItem.badgeValue = String(cardIDArray.count)
     }
 }
