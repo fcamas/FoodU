@@ -21,6 +21,7 @@
 		1181868C2AEB199D00ADCF53 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181868B2AEB199D00ADCF53 /* HomeController.swift */; };
 		1181868E2AEB19B100ADCF53 /* FavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181868D2AEB19B100ADCF53 /* FavController.swift */; };
 		118186902AEB1BA000ADCF53 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181868F2AEB1BA000ADCF53 /* OnboardingController.swift */; };
+		11CD391F2B18005700DADA65 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD391E2B18005700DADA65 /* SplashScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		1181868B2AEB199D00ADCF53 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		1181868D2AEB19B100ADCF53 /* FavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavController.swift; sourceTree = "<group>"; };
 		1181868F2AEB1BA000ADCF53 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
+		11CD391E2B18005700DADA65 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				118186692AEAAF0500ADCF53 /* AppDelegate.swift */,
 				1181866B2AEAAF0500ADCF53 /* SceneDelegate.swift */,
 				1181866D2AEAAF0500ADCF53 /* ViewController.swift */,
+				11CD391E2B18005700DADA65 /* SplashScreen.swift */,
 				1181866F2AEAAF0500ADCF53 /* Main.storyboard */,
 				118186722AEAAF0500ADCF53 /* Assets.xcassets */,
 				118186742AEAAF0500ADCF53 /* LaunchScreen.storyboard */,
@@ -178,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11CD391F2B18005700DADA65 /* SplashScreen.swift in Sources */,
 				1181868A2AEB18FF00ADCF53 /* TabBarView.swift in Sources */,
 				1181866E2AEAAF0500ADCF53 /* ViewController.swift in Sources */,
 				1181866A2AEAAF0500ADCF53 /* AppDelegate.swift in Sources */,
