@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		112B176F2B1AAFD60023AA1E /* ExtensionTextFieldAssesory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112B176E2B1AAFD60023AA1E /* ExtensionTextFieldAssesory.swift */; };
 		1181866A2AEAAF0500ADCF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118186692AEAAF0500ADCF53 /* AppDelegate.swift */; };
 		1181866C2AEAAF0500ADCF53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181866B2AEAAF0500ADCF53 /* SceneDelegate.swift */; };
 		1181866E2AEAAF0500ADCF53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181866D2AEAAF0500ADCF53 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		112B176E2B1AAFD60023AA1E /* ExtensionTextFieldAssesory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTextFieldAssesory.swift; sourceTree = "<group>"; };
 		118186662AEAAF0500ADCF53 /* FoodU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		118186692AEAAF0500ADCF53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1181866B2AEAAF0500ADCF53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				118186802AEB0EBE00ADCF53 /* BussinessCardModel.swift */,
 				118186822AEB0F7500ADCF53 /* BusinessData.swift */,
+				112B176E2B1AAFD60023AA1E /* ExtensionTextFieldAssesory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				118186902AEB1BA000ADCF53 /* OnboardingController.swift in Sources */,
 				118186862AEB10C400ADCF53 /* BusinessManagment.swift in Sources */,
 				118186812AEB0EBE00ADCF53 /* BussinessCardModel.swift in Sources */,
+				112B176F2B1AAFD60023AA1E /* ExtensionTextFieldAssesory.swift in Sources */,
 				118186882AEB133F00ADCF53 /* SearchResultCell.swift in Sources */,
 				1181868E2AEB19B100ADCF53 /* FavController.swift in Sources */,
 				118186832AEB0F7500ADCF53 /* BusinessData.swift in Sources */,

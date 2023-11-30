@@ -1,0 +1,18 @@
+//
+//  ExtensionTextFieldAssesory.swift
+//  FoodU
+//
+//  Created by Fredy Camas on 12/1/23.
+//
+
+import UIKit
+
+extension UITextField {
+    
+    func addAssesory(_ image: UIImage, size: Int, withColor: UIColor){
+        let padding = 8
+        let outerBounds = UIView(frame: CGRect(x: 0, y: 0, width: size+padding, height: size))
+        let imageAssesory = UIImageView(frame: CGRect(x: -padding, y: 0, width: size, height: size))
+
+    }
+}
