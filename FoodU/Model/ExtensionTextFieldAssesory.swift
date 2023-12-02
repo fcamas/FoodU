@@ -13,6 +13,11 @@ extension UITextField {
         let padding = 8
         let outerBounds = UIView(frame: CGRect(x: 0, y: 0, width: size+padding, height: size))
         let imageAssesory = UIImageView(frame: CGRect(x: -padding, y: 0, width: size, height: size))
-
+        
+        imageAssesory.image = image
+        imageAssesory.tintColor = withColor
+        outerBounds.addSubview(imageAssesory)
+        rightView = outerBounds
+        rightViewMode = .always
     }
 }
