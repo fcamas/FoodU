@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		112B176F2B1AAFD60023AA1E /* ExtensionTextFieldAssesory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112B176E2B1AAFD60023AA1E /* ExtensionTextFieldAssesory.swift */; };
+		112B17722B1E602C0023AA1E /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112B17712B1E602C0023AA1E /* UIImageView.swift */; };
 		1181866A2AEAAF0500ADCF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118186692AEAAF0500ADCF53 /* AppDelegate.swift */; };
 		1181866C2AEAAF0500ADCF53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181866B2AEAAF0500ADCF53 /* SceneDelegate.swift */; };
 		1181866E2AEAAF0500ADCF53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181866D2AEAAF0500ADCF53 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		112B176E2B1AAFD60023AA1E /* ExtensionTextFieldAssesory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTextFieldAssesory.swift; sourceTree = "<group>"; };
+		112B17712B1E602C0023AA1E /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		118186662AEAAF0500ADCF53 /* FoodU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		118186692AEAAF0500ADCF53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1181866B2AEAAF0500ADCF53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		112B17702B1E60150023AA1E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				112B17712B1E602C0023AA1E /* UIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		1181865D2AEAAF0500ADCF53 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +86,7 @@
 		118186682AEAAF0500ADCF53 /* FoodU */ = {
 			isa = PBXGroup;
 			children = (
+				112B17702B1E60150023AA1E /* Extensions */,
 				118186842AEB10AB00ADCF53 /* Networking */,
 				1181867F2AEB0EA100ADCF53 /* Model */,
 				1181868D2AEB19B100ADCF53 /* FavController.swift */,
@@ -186,6 +197,7 @@
 			files = (
 				11CD391F2B18005700DADA65 /* SplashScreen.swift in Sources */,
 				1181868A2AEB18FF00ADCF53 /* TabBarView.swift in Sources */,
+				112B17722B1E602C0023AA1E /* UIImageView.swift in Sources */,
 				1181866E2AEAAF0500ADCF53 /* ViewController.swift in Sources */,
 				1181866A2AEAAF0500ADCF53 /* AppDelegate.swift in Sources */,
 				1181868C2AEB199D00ADCF53 /* HomeController.swift in Sources */,
