@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HeaderView: UICollectionReusableView {
+class HeaderView: UICollectionReusableView, UICollectionViewDelegate, UITextFieldDelegate  {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -21,6 +21,18 @@ class HeaderView: UICollectionReusableView {
     }
     
     func addCustomConstraints() {
+      //  contentView.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(collectionView)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.topAnchor.constraint(equalTo: topAnchor,constant: 8).isActive = true
+        collectionView.leftAnchor.constraint(equalTo: leftAnchor, constant:  24).isActive = true
+        collectionView.bottomAnchor.constraint(equalTo:bottomAnchor ,constant: 0).isActive = false
+        collectionView.rightAnchor.constraint(equalTo: rightAnchor, constant: -24).isActive = true
+        collectionView.widthAnchor.constraint(equalToConstant: 0).isActive = true
+        collectionView.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell1")
+ 
     }
     
     lazy var collectionView: UICollectionView = {
